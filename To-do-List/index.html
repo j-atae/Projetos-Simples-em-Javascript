@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>To-do list</title>
 </head>
 <body>
     <fieldset>
         <legend> To-do list </legend>
         <div>
-            <label>Digite a tarefa:</label>
-            <input type="text" id="acao" name="acao"/>
+            <h3>Digite a tarefa:</h3>
+            <input type="text" id="item" name="item"/>
         </div>
+        <br>
         <div>
-            <button onclick="adicionar()">Enviar sua mensagem</button>
+            <button onclick="adicionar()">Adicionar</button>
         </div>
-        <ul id="tarefas">
-            <div>
-                <input type = "checkbox">
-                <label> Música </label>
-            </div>
-        </ul>      
+        <br>
+        <div id="tarefas"> 
+        </div>     
         <script src="assets/js/script.js"></script>
     </fieldset>    
 </body>

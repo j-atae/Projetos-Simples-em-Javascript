@@ -1,18 +1,19 @@
-function adicionar() {
+function adicionar(item){
     var checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    var acao = document.getElementById("acao").value;
-    var tarefas  = document.getElementById("tarefas").innerHTML;
-    tarefas = tarefas + "<li>"+acao+"</li>";
-    tarefas.appendChild('checkbox');
-    document.getElementById("tarefas").innerHTML = tarefas;
-}
-  //"<li>"+acao+"</li>"
-               
 
-  
- 
+    item = document.getElementById("item").value;
+    var tarefas = document.getElementById('tarefas');
+    var br = document.createElement('br');
+    var newitem = document.createTextNode(item);
+    var label = document.createElement('label');
+    
+    label.appendChild(newitem);
+    
+    tarefas.appendChild(checkbox);
+    tarefas.appendChild(label);
+    tarefas.appendChild(br);
 
+    document.getElementById('item').value='';
 
-  //var container = document.getElementById('container');
- // container.appendChild(checkbox);
+  }
