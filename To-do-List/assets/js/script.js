@@ -7,7 +7,7 @@ function adicionar(item){
     var br = document.createElement('br');
     var newitem = document.createTextNode(item);
     var label = document.createElement('label');
-    
+
     label.appendChild(newitem);
     
     tarefas.appendChild(checkbox);
@@ -16,4 +16,4 @@ function adicionar(item){
 
     document.getElementById('item').value='';
 
-  }
+}

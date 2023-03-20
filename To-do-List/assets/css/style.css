@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+
 :checked + label {
     text-decoration: line-through;
+}
+
+body{
+    background-color: azure;
+    font-family: 'Sono', sans-serif;
+}
+
+button{
+	background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+    height: 30px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
 }
